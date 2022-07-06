@@ -1,0 +1,9 @@
+The factorial of 5 is: 120
+The sum of squares of for 5 is 55
+The fibonacci sequence for 5 is: 0, 1, 1, 2, 3, 
+The factorial of 10 is: 3628800
+The sum of squares of for 10 is 385
+The fibonacci sequence for 10 is: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 
+The factorial of 25 is: 2076180480
+The sum of squares of for 25 is 5525
+The fibonacci sequence for 25 is: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 
