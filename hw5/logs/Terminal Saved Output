@@ -1,0 +1,234 @@
+Last login: Tue Jul 19 23:25:13 on ttys000
+jinfengs-MBP:~ cjf$ cd
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ cd hw5
+jinfengs-MBP:hw5 cjf$ ls
+README.MD	logs		src
+jinfengs-MBP:hw5 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+calculatesDistance.java	sample.txt
+jinfengs-MBP:src cjf$ javac calculatesDistance.java
+jinfengs-MBP:src cjf$ ls
+calculatesDistance.class	sample.txt
+calculatesDistance.java
+jinfengs-MBP:src cjf$ java calculatesDistance
+Error: Could not find or load main class calculatesDistance
+Caused by: java.lang.NoClassDefFoundError: hw5/src/calculatesDistance (wrong name: calculatesDistance)
+jinfengs-MBP:src cjf$ java java calculatesDistance.java
+Error: Could not find or load main class java
+Caused by: java.lang.ClassNotFoundException: java
+jinfengs-MBP:src cjf$ java calculatesDistance.java
+jinfengs-MBP:src cjf$ java calculatesDistance.java
+jinfengs-MBP:src cjf$ ls
+Motorcycle.txt			Van.txt
+Roadster.txt			calculatesDistance.class
+Seden.txt			calculatesDistance.java
+Suv.txt				sample.txt
+jinfengs-MBP:src cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../../Hw3/Program1/Program1.java
+	deleted:    ../../Second file
+	modified:   ../../hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../hw2/bin/
+	../
+	../../out/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jinfengs-MBP:src cjf$ cd ..
+jinfengs-MBP:hw5 cjf$ ls
+README.MD	logs		src
+jinfengs-MBP:hw5 cjf$ cd ..
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	hw5/
+	out/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jinfengs-MBP:cis1115 cjf$ git add hw5
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   hw5/README.MD
+	new file:   hw5/src/Motorcycle.txt
+	new file:   hw5/src/Roadster.txt
+	new file:   hw5/src/Seden.txt
+	new file:   hw5/src/Suv.txt
+	new file:   hw5/src/Van.txt
+	new file:   hw5/src/calculatesDistance.java
+	new file:   hw5/src/sample.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	out/
+
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   hw5/README.MD
+	new file:   hw5/src/Motorcycle.txt
+	new file:   hw5/src/Roadster.txt
+	new file:   hw5/src/Seden.txt
+	new file:   hw5/src/Suv.txt
+	new file:   hw5/src/Van.txt
+	new file:   hw5/src/calculatesDistance.java
+	new file:   hw5/src/sample.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	out/
+
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ git commit -m "adding hw5"
+[main c7c0371] adding hw5
+ 8 files changed, 103 insertions(+)
+ create mode 100644 hw5/README.MD
+ create mode 100644 hw5/src/Motorcycle.txt
+ create mode 100644 hw5/src/Roadster.txt
+ create mode 100644 hw5/src/Seden.txt
+ create mode 100644 hw5/src/Suv.txt
+ create mode 100644 hw5/src/Van.txt
+ create mode 100644 hw5/src/calculatesDistance.java
+ create mode 100644 hw5/src/sample.txt
+jinfengs-MBP:cis1115 cjf$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.52 KiB | 1.52 MiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:cjf888/cis1115.git
+   abfe11a..c7c0371  main -> main
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ cd hw5
+jinfengs-MBP:hw5 cjf$ ls
+README.MD	logs		src
+jinfengs-MBP:hw5 cjf$ cd logs
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ script -r script-$(date +%F).log
+Script started, output file is script-2022-07-20.log
+bash-3.2$ ls
+script-2022-07-20.log
+bash-3.2$ exit
+exit
+
+Script done, output file is script-2022-07-20.log
+jinfengs-MBP:logs cjf$ script -r script-$(date +%F).log
+Script started, output file is script-2022-07-20.log
+bash-3.2$ cd
+bash-3.2$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+bash-3.2$ cd cis1115
+bash-3.2$ cd hw5
+bash-3.2$ cd scr
+bash: cd: scr: No such file or directory
+bash-3.2$ ls
+README.MD	logs		src
+bash-3.2$ cd src
+bash-3.2$ ls
+Motorcycle.txt			Van.txt
+Roadster.txt			calculatesDistance.class
+Seden.txt			calculatesDistance.java
+Suv.txt				sample.txt
+bash-3.2$ ls
+calculatesDistance.class	sample.txt
+calculatesDistance.java
+bash-3.2$ javac calculatesDistance.java
+bash-3.2$ java calculatesDistance.java
+bash-3.2$ ls
+Motorcycle.txt			Van.txt
+Roadster.txt			calculatesDistance.class
+Seden.txt			calculatesDistance.java
+Suv.txt				sample.txt
+bash-3.2$ exit
+exit
+
+Script done, output file is script-2022-07-20.log
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ -a
+-bash: -a: command not found
+jinfengs-MBP:logs cjf$ -a script-2022-07-20.log
+-bash: -a: command not found
+jinfengs-MBP:logs cjf$ man script
+jinfengs-MBP:logs cjf$ 
