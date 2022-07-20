@@ -1,0 +1,6 @@
+Vehicle,Speed,Time
+Seden,50,4
+Suv,60,5
+Van,40,6
+Motorcycle,20,2
+Roadster,100,3
