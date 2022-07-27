@@ -1,0 +1,88 @@
+Last login: Wed Jul 20 01:26:46 on ttys000
+jinfengs-MBP:~ cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+fatal: not a git repository (or any of the parent directories): .git
+jinfengs-MBP:~ cjf$ git log --since='2 weeks ago' --max-count=3 
+fatal: not a git repository (or any of the parent directories): .git
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis115
+-bash: cd: cis115: No such file or directory
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ git log --since='2 weeks ago' --max-count=3 
+commit d659fc2b2ba4e635c633ad7b4f7d9bb46e33a98b (HEAD -> main, origin/main, origin/HEAD)
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:30:53 2022 -0400
+
+    add logs record
+
+commit d93b2aec26b4b58de561bb0411b62d3671c5a1fb
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:22:54 2022 -0400
+
+    add logs record
+
+commit c7c0371c9785ad842d53c33c8152363173c14471
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Tue Jul 19 23:52:24 2022 -0400
+
+    adding hw5
+jinfengs-MBP:cis1115 cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+d659fc2 (HEAD -> main, origin/main, origin/HEAD) add logs record
+d93b2ae add logs record
+c7c0371 adding hw5
+abfe11a Merge branch 'main' of github.com:cjf888/cis1115 into main
+b08771e adding Hw4
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ mkdir hw6
+jinfengs-MBP:cis1115 cjf$ cd hw6
+jinfengs-MBP:hw6 cjf$ mkdir src
+jinfengs-MBP:hw6 cjf$ mkdir logs
+jinfengs-MBP:hw6 cjf$ ls
+logs	src
+jinfengs-MBP:hw6 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Month.java
+jinfengs-MBP:src cjf$ javac Month.java
+jinfengs-MBP:src cjf$ java MOnth.java
+error: can't find main(String[]) method in class: hw6.src.Month
+jinfengs-MBP:src cjf$ java Month.java
+error: can't find main(String[]) method in class: hw6.src.Month
+jinfengs-MBP:src cjf$ la
+-bash: la: command not found
+jinfengs-MBP:src cjf$ la
+-bash: la: command not found
+jinfengs-MBP:src cjf$ cd..
+-bash: cd..: command not found
+jinfengs-MBP:src cjf$ cd ..
+jinfengs-MBP:hw6 cjf$ la
+-bash: la: command not found
+jinfengs-MBP:hw6 cjf$ cd
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ cd hw6
+jinfengs-MBP:hw6 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Month.class	Month.java
+jinfengs-MBP:src cjf$ javac Month.java
+jinfengs-MBP:src cjf$ java Month.java
+Enter a month (1-12): 11
+Enter a year: 1994
+1994 has 30 days
+jinfengs-MBP:src cjf$ 
