@@ -1,0 +1,643 @@
+Last login: Wed Jul 20 01:26:46 on ttys000
+jinfengs-MBP:~ cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+fatal: not a git repository (or any of the parent directories): .git
+jinfengs-MBP:~ cjf$ git log --since='2 weeks ago' --max-count=3 
+fatal: not a git repository (or any of the parent directories): .git
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis115
+-bash: cd: cis115: No such file or directory
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ git log --since='2 weeks ago' --max-count=3 
+commit d659fc2b2ba4e635c633ad7b4f7d9bb46e33a98b (HEAD -> main, origin/main, origin/HEAD)
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:30:53 2022 -0400
+
+    add logs record
+
+commit d93b2aec26b4b58de561bb0411b62d3671c5a1fb
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:22:54 2022 -0400
+
+    add logs record
+
+commit c7c0371c9785ad842d53c33c8152363173c14471
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Tue Jul 19 23:52:24 2022 -0400
+
+    adding hw5
+jinfengs-MBP:cis1115 cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+d659fc2 (HEAD -> main, origin/main, origin/HEAD) add logs record
+d93b2ae add logs record
+c7c0371 adding hw5
+abfe11a Merge branch 'main' of github.com:cjf888/cis1115 into main
+b08771e adding Hw4
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		new.md
+README.md	hw2		hw5		out
+jinfengs-MBP:cis1115 cjf$ mkdir hw6
+jinfengs-MBP:cis1115 cjf$ cd hw6
+jinfengs-MBP:hw6 cjf$ mkdir src
+jinfengs-MBP:hw6 cjf$ mkdir logs
+jinfengs-MBP:hw6 cjf$ ls
+logs	src
+jinfengs-MBP:hw6 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Month.java
+jinfengs-MBP:src cjf$ javac Month.java
+jinfengs-MBP:src cjf$ java MOnth.java
+error: can't find main(String[]) method in class: hw6.src.Month
+jinfengs-MBP:src cjf$ java Month.java
+error: can't find main(String[]) method in class: hw6.src.Month
+jinfengs-MBP:src cjf$ la
+-bash: la: command not found
+jinfengs-MBP:src cjf$ la
+-bash: la: command not found
+jinfengs-MBP:src cjf$ cd..
+-bash: cd..: command not found
+jinfengs-MBP:src cjf$ cd ..
+jinfengs-MBP:hw6 cjf$ la
+-bash: la: command not found
+jinfengs-MBP:hw6 cjf$ cd
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ cd hw6
+jinfengs-MBP:hw6 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Month.class	Month.java
+jinfengs-MBP:src cjf$ javac Month.java
+jinfengs-MBP:src cjf$ java Month.java
+Enter a month (1-12): 11
+Enter a year: 1994
+1994 has 30 days
+jinfengs-MBP:src cjf$ cd
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		hw6		out
+README.md	hw2		hw5		new.md
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	hw6/
+	out/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jinfengs-MBP:cis1115 cjf$ git add hw6
+jinfengs-MBP:cis1115 cjf$ git commit -m "add hw6"
+[main 04522e6] add hw6
+ 2 files changed, 212 insertions(+)
+ create mode 100644 hw6/logs/Terminal Saved Output 2
+ create mode 100644 hw6/src/Month.java
+jinfengs-MBP:cis1115 cjf$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 2.19 KiB | 2.19 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:cjf888/cis1115.git
+   d659fc2..04522e6  main -> main
+jinfengs-MBP:cis1115 cjf$ git log --since='2 weeks ago' --max-count=3 
+commit 04522e6a66be03bb2b90659a94257b76d0299797 (HEAD -> main, origin/main, origin/HEAD)
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 27 03:15:00 2022 -0400
+
+    add hw6
+
+commit d659fc2b2ba4e635c633ad7b4f7d9bb46e33a98b
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:30:53 2022 -0400
+
+    add logs record
+
+commit d93b2aec26b4b58de561bb0411b62d3671c5a1fb
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 20 01:22:54 2022 -0400
+
+    add logs record
+jinfengs-MBP:cis1115 cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+04522e6 (HEAD -> main, origin/main, origin/HEAD) add hw6
+d659fc2 add logs record
+d93b2ae add logs record
+c7c0371 adding hw5
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		hw6		out
+README.md	hw2		hw5		new.md
+jinfengs-MBP:cis1115 cjf$ mkdir hw7
+jinfengs-MBP:cis1115 cjf$ cd hw7
+jinfengs-MBP:hw7 cjf$ mkdir src
+jinfengs-MBP:hw7 cjf$ mkdir log
+jinfengs-MBP:hw7 cjf$ ls
+log	src
+jinfengs-MBP:hw7 cjf$ ls
+log	src
+jinfengs-MBP:hw7 cjf$ cd ..
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		hw6		new.md
+README.md	hw2		hw5		hw7		out
+jinfengs-MBP:cis1115 cjf$ cd ..
+jinfengs-MBP:~ cjf$ ls
+Applications			Pictures
+Desktop				Public
+Documents			cis1115
+Downloads			eclipse
+IdeaProjects			eclipse-workspace
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				thinkorswim
+jinfengs-MBP:~ cjf$ cd cis 1115
+-bash: cd: cis: No such file or directory
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ cd hw7
+jinfengs-MBP:hw7 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Car.java
+jinfengs-MBP:src cjf$ javac Car.java
+jinfengs-MBP:src cjf$ java Car.java
+error: can't find main(String[]) method in class: hw7.src.Car
+jinfengs-MBP:src cjf$ java Car.java
+error: can't find main(String[]) method in class: hw7.src.Car
+jinfengs-MBP:src cjf$ javac Car.java
+jinfengs-MBP:src cjf$ java Car.java
+Current status of the car:
+Year model: 2022
+Make: BMW
+Filling Gas: 1
+Filling Gas: 2
+Filling Gas: 3
+Filling Gas: 4
+Filling Gas: 5
+Filling Gas: 6
+Filling Gas: 7
+Filling Gas: 8
+Filling Gas: 9
+Filling Gas: 10
+Filling Gas: 11
+Filling Gas: 12
+Filling Gas: 13
+Filling Gas: 14
+Mileage: 1
+Fuel Level: 15Mileage: 2
+Fuel Level: 15Mileage: 3
+Fuel Level: 15Mileage: 4
+Fuel Level: 15Mileage: 5
+Fuel Level: 15Mileage: 6
+Fuel Level: 15Mileage: 7
+Fuel Level: 15Mileage: 8
+Fuel Level: 15Mileage: 9
+Fuel Level: 15Mileage: 10
+Fuel Level: 15Mileage: 11
+Fuel Level: 15Mileage: 12
+Fuel Level: 15Mileage: 13
+Fuel Level: 15Mileage: 14
+Fuel Level: 15Mileage: 15
+Fuel Level: 15Mileage: 16
+Fuel Level: 15Mileage: 17
+Fuel Level: 15Mileage: 18
+Fuel Level: 15Mileage: 19
+Fuel Level: 15Mileage: 20
+Fuel Level: 15Mileage: 21
+Fuel Level: 15Mileage: 22
+Fuel Level: 15Mileage: 23
+Fuel Level: 15Mileage: 24
+Remaining gallons: 14
+Fuel Level: 14Mileage: 25
+Fuel Level: 14Mileage: 26
+Fuel Level: 14Mileage: 27
+Fuel Level: 14Mileage: 28
+Fuel Level: 14Mileage: 29
+Fuel Level: 14Mileage: 30
+Fuel Level: 14Mileage: 31
+Fuel Level: 14Mileage: 32
+Fuel Level: 14Mileage: 33
+Fuel Level: 14Mileage: 34
+Fuel Level: 14Mileage: 35
+Fuel Level: 14Mileage: 36
+Fuel Level: 14Mileage: 37
+Fuel Level: 14Mileage: 38
+Fuel Level: 14Mileage: 39
+Fuel Level: 14Mileage: 40
+Fuel Level: 14Mileage: 41
+Fuel Level: 14Mileage: 42
+Fuel Level: 14Mileage: 43
+Fuel Level: 14Mileage: 44
+Fuel Level: 14Mileage: 45
+Fuel Level: 14Mileage: 46
+Fuel Level: 14Mileage: 47
+Fuel Level: 14Mileage: 48
+Remaining gallons: 13
+Fuel Level: 13Mileage: 49
+Fuel Level: 13Mileage: 50
+Fuel Level: 13Mileage: 51
+Fuel Level: 13Mileage: 52
+Fuel Level: 13Mileage: 53
+Fuel Level: 13Mileage: 54
+Fuel Level: 13Mileage: 55
+Fuel Level: 13Mileage: 56
+Fuel Level: 13Mileage: 57
+Fuel Level: 13Mileage: 58
+Fuel Level: 13Mileage: 59
+Fuel Level: 13Mileage: 60
+Fuel Level: 13Mileage: 61
+Fuel Level: 13Mileage: 62
+Fuel Level: 13Mileage: 63
+Fuel Level: 13Mileage: 64
+Fuel Level: 13Mileage: 65
+Fuel Level: 13Mileage: 66
+Fuel Level: 13Mileage: 67
+Fuel Level: 13Mileage: 68
+Fuel Level: 13Mileage: 69
+Fuel Level: 13Mileage: 70
+Fuel Level: 13Mileage: 71
+Fuel Level: 13Mileage: 72
+Remaining gallons: 12
+Fuel Level: 12Mileage: 73
+Fuel Level: 12Mileage: 74
+Fuel Level: 12Mileage: 75
+Fuel Level: 12Mileage: 76
+Fuel Level: 12Mileage: 77
+Fuel Level: 12Mileage: 78
+Fuel Level: 12Mileage: 79
+Fuel Level: 12Mileage: 80
+Fuel Level: 12Mileage: 81
+Fuel Level: 12Mileage: 82
+Fuel Level: 12Mileage: 83
+Fuel Level: 12Mileage: 84
+Fuel Level: 12Mileage: 85
+Fuel Level: 12Mileage: 86
+Fuel Level: 12Mileage: 87
+Fuel Level: 12Mileage: 88
+Fuel Level: 12Mileage: 89
+Fuel Level: 12Mileage: 90
+Fuel Level: 12Mileage: 91
+Fuel Level: 12Mileage: 92
+Fuel Level: 12Mileage: 93
+Fuel Level: 12Mileage: 94
+Fuel Level: 12Mileage: 95
+Fuel Level: 12Mileage: 96
+Remaining gallons: 11
+Fuel Level: 11Mileage: 97
+Fuel Level: 11Mileage: 98
+Fuel Level: 11Mileage: 99
+Fuel Level: 11Mileage: 100
+Fuel Level: 11Mileage: 101
+Fuel Level: 11Mileage: 102
+Fuel Level: 11Mileage: 103
+Fuel Level: 11Mileage: 104
+Fuel Level: 11Mileage: 105
+Fuel Level: 11Mileage: 106
+Fuel Level: 11Mileage: 107
+Fuel Level: 11Mileage: 108
+Fuel Level: 11Mileage: 109
+Fuel Level: 11Mileage: 110
+Fuel Level: 11Mileage: 111
+Fuel Level: 11Mileage: 112
+Fuel Level: 11Mileage: 113
+Fuel Level: 11Mileage: 114
+Fuel Level: 11Mileage: 115
+Fuel Level: 11Mileage: 116
+Fuel Level: 11Mileage: 117
+Fuel Level: 11Mileage: 118
+Fuel Level: 11Mileage: 119
+Fuel Level: 11Mileage: 120
+Remaining gallons: 10
+Fuel Level: 10Mileage: 121
+Fuel Level: 10Mileage: 122
+Fuel Level: 10Mileage: 123
+Fuel Level: 10Mileage: 124
+Fuel Level: 10Mileage: 125
+Fuel Level: 10Mileage: 126
+Fuel Level: 10Mileage: 127
+Fuel Level: 10Mileage: 128
+Fuel Level: 10Mileage: 129
+Fuel Level: 10Mileage: 130
+Fuel Level: 10Mileage: 131
+Fuel Level: 10Mileage: 132
+Fuel Level: 10Mileage: 133
+Fuel Level: 10Mileage: 134
+Fuel Level: 10Mileage: 135
+Fuel Level: 10Mileage: 136
+Fuel Level: 10Mileage: 137
+Fuel Level: 10Mileage: 138
+Fuel Level: 10Mileage: 139
+Fuel Level: 10Mileage: 140
+Fuel Level: 10Mileage: 141
+Fuel Level: 10Mileage: 142
+Fuel Level: 10Mileage: 143
+Fuel Level: 10Mileage: 144
+Remaining gallons: 9
+Fuel Level: 9Mileage: 145
+Fuel Level: 9Mileage: 146
+Fuel Level: 9Mileage: 147
+Fuel Level: 9Mileage: 148
+Fuel Level: 9Mileage: 149
+Fuel Level: 9Mileage: 150
+Fuel Level: 9Mileage: 151
+Fuel Level: 9Mileage: 152
+Fuel Level: 9Mileage: 153
+Fuel Level: 9Mileage: 154
+Fuel Level: 9Mileage: 155
+Fuel Level: 9Mileage: 156
+Fuel Level: 9Mileage: 157
+Fuel Level: 9Mileage: 158
+Fuel Level: 9Mileage: 159
+Fuel Level: 9Mileage: 160
+Fuel Level: 9Mileage: 161
+Fuel Level: 9Mileage: 162
+Fuel Level: 9Mileage: 163
+Fuel Level: 9Mileage: 164
+Fuel Level: 9Mileage: 165
+Fuel Level: 9Mileage: 166
+Fuel Level: 9Mileage: 167
+Fuel Level: 9Mileage: 168
+Remaining gallons: 8
+Fuel Level: 8Mileage: 169
+Fuel Level: 8Mileage: 170
+Fuel Level: 8Mileage: 171
+Fuel Level: 8Mileage: 172
+Fuel Level: 8Mileage: 173
+Fuel Level: 8Mileage: 174
+Fuel Level: 8Mileage: 175
+Fuel Level: 8Mileage: 176
+Fuel Level: 8Mileage: 177
+Fuel Level: 8Mileage: 178
+Fuel Level: 8Mileage: 179
+Fuel Level: 8Mileage: 180
+Fuel Level: 8Mileage: 181
+Fuel Level: 8Mileage: 182
+Fuel Level: 8Mileage: 183
+Fuel Level: 8Mileage: 184
+Fuel Level: 8Mileage: 185
+Fuel Level: 8Mileage: 186
+Fuel Level: 8Mileage: 187
+Fuel Level: 8Mileage: 188
+Fuel Level: 8Mileage: 189
+Fuel Level: 8Mileage: 190
+Fuel Level: 8Mileage: 191
+Fuel Level: 8Mileage: 192
+Remaining gallons: 7
+Fuel Level: 7Mileage: 193
+Fuel Level: 7Mileage: 194
+Fuel Level: 7Mileage: 195
+Fuel Level: 7Mileage: 196
+Fuel Level: 7Mileage: 197
+Fuel Level: 7Mileage: 198
+Fuel Level: 7Mileage: 199
+Fuel Level: 7Mileage: 200
+Fuel Level: 7Mileage: 201
+Fuel Level: 7Mileage: 202
+Fuel Level: 7Mileage: 203
+Fuel Level: 7Mileage: 204
+Fuel Level: 7Mileage: 205
+Fuel Level: 7Mileage: 206
+Fuel Level: 7Mileage: 207
+Fuel Level: 7Mileage: 208
+Fuel Level: 7Mileage: 209
+Fuel Level: 7Mileage: 210
+Fuel Level: 7Mileage: 211
+Fuel Level: 7Mileage: 212
+Fuel Level: 7Mileage: 213
+Fuel Level: 7Mileage: 214
+Fuel Level: 7Mileage: 215
+Fuel Level: 7Mileage: 216
+Remaining gallons: 6
+Fuel Level: 6Mileage: 217
+Fuel Level: 6Mileage: 218
+Fuel Level: 6Mileage: 219
+Fuel Level: 6Mileage: 220
+Fuel Level: 6Mileage: 221
+Fuel Level: 6Mileage: 222
+Fuel Level: 6Mileage: 223
+Fuel Level: 6Mileage: 224
+Fuel Level: 6Mileage: 225
+Fuel Level: 6Mileage: 226
+Fuel Level: 6Mileage: 227
+Fuel Level: 6Mileage: 228
+Fuel Level: 6Mileage: 229
+Fuel Level: 6Mileage: 230
+Fuel Level: 6Mileage: 231
+Fuel Level: 6Mileage: 232
+Fuel Level: 6Mileage: 233
+Fuel Level: 6Mileage: 234
+Fuel Level: 6Mileage: 235
+Fuel Level: 6Mileage: 236
+Fuel Level: 6Mileage: 237
+Fuel Level: 6Mileage: 238
+Fuel Level: 6Mileage: 239
+Fuel Level: 6Mileage: 240
+Remaining gallons: 5
+Fuel Level: 5Mileage: 241
+Fuel Level: 5Mileage: 242
+Fuel Level: 5Mileage: 243
+Fuel Level: 5Mileage: 244
+Fuel Level: 5Mileage: 245
+Fuel Level: 5Mileage: 246
+Fuel Level: 5Mileage: 247
+Fuel Level: 5Mileage: 248
+Fuel Level: 5Mileage: 249
+Fuel Level: 5Mileage: 250
+Fuel Level: 5Mileage: 251
+Fuel Level: 5Mileage: 252
+Fuel Level: 5Mileage: 253
+Fuel Level: 5Mileage: 254
+Fuel Level: 5Mileage: 255
+Fuel Level: 5Mileage: 256
+Fuel Level: 5Mileage: 257
+Fuel Level: 5Mileage: 258
+Fuel Level: 5Mileage: 259
+Fuel Level: 5Mileage: 260
+Fuel Level: 5Mileage: 261
+Fuel Level: 5Mileage: 262
+Fuel Level: 5Mileage: 263
+Fuel Level: 5Mileage: 264
+Remaining gallons: 4
+Fuel Level: 4Mileage: 265
+Fuel Level: 4Mileage: 266
+Fuel Level: 4Mileage: 267
+Fuel Level: 4Mileage: 268
+Fuel Level: 4Mileage: 269
+Fuel Level: 4Mileage: 270
+Fuel Level: 4Mileage: 271
+Fuel Level: 4Mileage: 272
+Fuel Level: 4Mileage: 273
+Fuel Level: 4Mileage: 274
+Fuel Level: 4Mileage: 275
+Fuel Level: 4Mileage: 276
+Fuel Level: 4Mileage: 277
+Fuel Level: 4Mileage: 278
+Fuel Level: 4Mileage: 279
+Fuel Level: 4Mileage: 280
+Fuel Level: 4Mileage: 281
+Fuel Level: 4Mileage: 282
+Fuel Level: 4Mileage: 283
+Fuel Level: 4Mileage: 284
+Fuel Level: 4Mileage: 285
+Fuel Level: 4Mileage: 286
+Fuel Level: 4Mileage: 287
+Fuel Level: 4Mileage: 288
+Remaining gallons: 3
+Fuel Level: 3Mileage: 289
+Fuel Level: 3Mileage: 290
+Fuel Level: 3Mileage: 291
+Fuel Level: 3Mileage: 292
+Fuel Level: 3Mileage: 293
+Fuel Level: 3Mileage: 294
+Fuel Level: 3Mileage: 295
+Fuel Level: 3Mileage: 296
+Fuel Level: 3Mileage: 297
+Fuel Level: 3Mileage: 298
+Fuel Level: 3Mileage: 299
+Fuel Level: 3Mileage: 300
+Fuel Level: 3Mileage: 301
+Fuel Level: 3Mileage: 302
+Fuel Level: 3Mileage: 303
+Fuel Level: 3Mileage: 304
+Fuel Level: 3Mileage: 305
+Fuel Level: 3Mileage: 306
+Fuel Level: 3Mileage: 307
+Fuel Level: 3Mileage: 308
+Fuel Level: 3Mileage: 309
+Fuel Level: 3Mileage: 310
+Fuel Level: 3Mileage: 311
+Fuel Level: 3Mileage: 312
+Remaining gallons: 2
+Fuel Level: 2Mileage: 313
+Fuel Level: 2Mileage: 314
+Fuel Level: 2Mileage: 315
+Fuel Level: 2Mileage: 316
+Fuel Level: 2Mileage: 317
+Fuel Level: 2Mileage: 318
+Fuel Level: 2Mileage: 319
+Fuel Level: 2Mileage: 320
+Fuel Level: 2Mileage: 321
+Fuel Level: 2Mileage: 322
+Fuel Level: 2Mileage: 323
+Fuel Level: 2Mileage: 324
+Fuel Level: 2Mileage: 325
+Fuel Level: 2Mileage: 326
+Fuel Level: 2Mileage: 327
+Fuel Level: 2Mileage: 328
+Fuel Level: 2Mileage: 329
+Fuel Level: 2Mileage: 330
+Fuel Level: 2Mileage: 331
+Fuel Level: 2Mileage: 332
+Fuel Level: 2Mileage: 333
+Fuel Level: 2Mileage: 334
+Fuel Level: 2Mileage: 335
+Fuel Level: 2Mileage: 336
+Remaining gallons: 1
+Fuel Level: 1Mileage: 337
+Fuel Level: 1Mileage: 338
+Fuel Level: 1Mileage: 339
+Fuel Level: 1Mileage: 340
+Fuel Level: 1Mileage: 341
+Fuel Level: 1Mileage: 342
+Fuel Level: 1Mileage: 343
+Fuel Level: 1Mileage: 344
+Fuel Level: 1Mileage: 345
+Fuel Level: 1Mileage: 346
+Fuel Level: 1Mileage: 347
+Fuel Level: 1Mileage: 348
+Fuel Level: 1Mileage: 349
+Fuel Level: 1Mileage: 350
+Fuel Level: 1Mileage: 351
+Fuel Level: 1Mileage: 352
+Fuel Level: 1Mileage: 353
+Fuel Level: 1Mileage: 354
+Fuel Level: 1Mileage: 355
+Fuel Level: 1Mileage: 356
+Fuel Level: 1Mileage: 357
+Fuel Level: 1Mileage: 358
+Fuel Level: 1Mileage: 359
+Fuel Level: 1Mileage: 360
+Remaining gallons: 0
+Fuel Level: 0
+Accelerating...
+Now the speed is 5
+
+Accelerating...
+Now the speed is 10
+
+Accelerating...
+Now the speed is 15
+
+Accelerating...
+Now the speed is 20
+
+Accelerating...
+Now the speed is 25
+
+Accelerating...
+Now the speed is 30
+
+Accelerating...
+Now the speed is 35
+
+Accelerating...
+Now the speed is 40
+
+Accelerating...
+Now the speed is 45
+
+Accelerating...
+Now the speed is 50
+
+Braking...
+Now the speed is 45
+
+Braking...
+Now the speed is 40
+
+Braking...
+Now the speed is 35
+
+Braking...
+Now the speed is 30
+
+Braking...
+Now the speed is 25
+
+Braking...
+Now the speed is 20
+
+Braking...
+Now the speed is 15
+
+Braking...
+Now the speed is 10
+
+Braking...
+Now the speed is 5
+
+Braking...
+Now the speed is 0
+jinfengs-MBP:src cjf$ 
