@@ -1,0 +1,169 @@
+Last login: Wed Jul 27 03:14:50 on ttys001
+jinfengs-MBP:~ cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+fatal: not a git repository (or any of the parent directories): .git
+jinfengs-MBP:~ cjf$ cd cis1115
+jinfengs-MBP:cis1115 cjf$ git log --oneline --decorate --color --max-count=10 --since='2 weeks ago'
+211b231 (HEAD -> main, origin/main, origin/HEAD) adding hw7
+04522e6 add hw6
+jinfengs-MBP:cis1115 cjf$ git log --stat --since='2 weeks ago' --max-count=3
+commit 211b2318e3fc71e64de7d65379f29633986637a6 (HEAD -> main, origin/main, origin/HEAD)
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Aug 3 03:34:28 2022 -0400
+
+    adding hw7
+
+ hw7/log/Terminal Saved Output 3 | 643 ++++++++++++++++++++++++++++++++++++++++
+ hw7/src/Car.java                | 195 ++++++++++++
+ 2 files changed, 838 insertions(+)
+
+commit 04522e6a66be03bb2b90659a94257b76d0299797
+Author: cjf888 <cjfcjf1994@hotmail.com>
+Date:   Wed Jul 27 03:15:00 2022 -0400
+
+    add hw6
+
+ hw6/logs/Terminal Saved Output 2 |  88 +++++++++++++++++++++++++++
+ hw6/src/Month.java               | 124 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 212 insertions(+)
+jinfengs-MBP:cis1115 cjf$ ls
+Hw3		hw1		hw4		hw6		new.md
+README.md	hw2		hw5		hw7		out
+jinfengs-MBP:cis1115 cjf$ mkdir hw8
+jinfengs-MBP:cis1115 cjf$ cd hw8
+jinfengs-MBP:hw8 cjf$ mkdir src
+jinfengs-MBP:hw8 cjf$ mkdir log
+jinfengs-MBP:hw8 cjf$ ls
+log	src
+jinfengs-MBP:hw8 cjf$ cd src
+jinfengs-MBP:src cjf$ ls
+Wordcount.java	sample.txt	sample2.txt
+jinfengs-MBP:src cjf$ javac Wordcount.java
+jinfengs-MBP:src cjf$ % java Wordcount sample.txt
+-bash: fg: %: no such job
+jinfengs-MBP:src cjf$ java Wordcount.java
+Error, usage: java ClassName inputfile
+jinfengs-MBP:src cjf$ % java Wordcount sample.text
+-bash: fg: %: no such job
+jinfengs-MBP:src cjf$ % java Wordcount.java sample.txt
+-bash: fg: %: no such job
+jinfengs-MBP:src cjf$ % java Wordcount sample.txt
+-bash: fg: %: no such job
+jinfengs-MBP:src cjf$ ls
+Wordcount.class	Wordcount.java	calculator.java	sample.txt	sample2.txt
+jinfengs-MBP:src cjf$ java Wordcount.java
+Enter Master File Name:
+sample.txt 
+Number of words present in file: 84
+jinfengs-MBP:src cjf$ java Wordcount.java
+Enter Master File Name:
+sample2.txt                       
+Number of words present in file: 12
+jinfengs-MBP:src cjf$ javac calculator.java
+jinfengs-MBP:src cjf$ java calculator.java
+Please enter formula with operator sign contain only +,-,*,/ :
+Note: (Please enter space between number amd operator)
+12.4 * 11.12
+137.89
+   
+ls
+Exception in thread "main" java.lang.NumberFormatException: For input string: "ls"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at hw8.src.calculator.calculation(calculator.java:20)
+	at hw8.src.calculator.main(calculator.java:7)
+jinfengs-MBP:src cjf$ ls
+Wordcount.class		calculator.class	sample.txt
+Wordcount.java		calculator.java		sample2.txt
+jinfengs-MBP:src cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../../Hw3/Program1/Program1.java
+	deleted:    ../../Second file
+	modified:   ../../hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../hw2/bin/
+	../
+	../../out/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jinfengs-MBP:src cjf$ ls
+Wordcount.class		calculator.class	sample.txt
+Wordcount.java		calculator.java		sample2.txt
+jinfengs-MBP:src cjf$ cd ..
+jinfengs-MBP:hw8 cjf$ cd.. 
+-bash: cd..: command not found
+jinfengs-MBP:hw8 cjf$ cd ..
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	hw8/
+	out/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jinfengs-MBP:cis1115 cjf$ git add hw8
+jinfengs-MBP:cis1115 cjf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   hw8/src/Wordcount.java
+	new file:   hw8/src/calculator.java
+	new file:   hw8/src/sample.txt
+	new file:   hw8/src/sample2.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Hw3/Program1/Program1.java
+	deleted:    Second file
+	modified:   hw1/src/CircleStat.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hw2/bin/
+	out/
+
+jinfengs-MBP:cis1115 cjf$ git commit -m "adding hw8"
+[main e804dcb] adding hw8
+ 4 files changed, 126 insertions(+)
+ create mode 100644 hw8/src/Wordcount.java
+ create mode 100644 hw8/src/calculator.java
+ create mode 100644 hw8/src/sample.txt
+ create mode 100644 hw8/src/sample2.txt
+jinfengs-MBP:cis1115 cjf$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.44 KiB | 1.44 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:cjf888/cis1115.git
+   211b231..e804dcb  main -> main
+jinfengs-MBP:cis1115 cjf$ 
